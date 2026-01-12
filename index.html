@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Fellowship - Welcome Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #667eea;
+            text-align: center;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background: #764ba2;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .info-card p {
+            color: #666;
+        }
+
+        .schedule {
+            background: #f8f9fa;
+        }
+
+        .schedule-item {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+        }
+
+        .schedule-item h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info strong {
+            color: #667eea;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grace Fellowship</h1>
+        <p>"For where two or three gather in my name, there am I with them." - Matthew 18:20</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Our Fellowship</h2>
+            <p>We are a community of believers committed to growing in faith, serving one another, and sharing God's love with our community.</p>
+            <a href="#contact" class="btn">Join Us This Sunday</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Our Mission</h3>
+                    <p>To make disciples of Jesus Christ who love God, love others, and serve the world through the power of the Holy Spirit.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Our Beliefs</h3>
+                    <p>We believe in the Bible as God's Word, salvation through Jesus Christ alone, and the transforming work of the Holy Spirit in believers' lives.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Our Community</h3>
+                    <p>We are a diverse family united in Christ, where everyone is welcome regardless of background, age, or where they are in their spiritual journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2>Weekly Schedule</h2>
+            <div class="schedule-item">
+                <h3>Sunday Worship Service</h3>
+                <p><strong>Time:</strong> 10:00 AM - 11:30 AM</p>
+                <p>Join us for worship, prayer, and biblical teaching. Childcare and children's programs available.</p>
+            </div>
+            <div class="schedule-item">
+                <h3>Wednesday Bible Study</h3>
+                <p><strong>Time:</strong> 7:00 PM - 8:30 PM</p>
+                <p>Dive deeper into God's Word together in a small group setting.</p>
+            </div>
+            <div class="schedule-item">
+                <h3>Friday Youth Group</h3>
+                <p><strong>Time:</strong> 6:30 PM - 8:30 PM</p>
+                <p>Fun, fellowship, and faith-building activities for teens (grades 6-12).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Community Outreach Day</h3>
+                    <p><strong>Date:</strong> First Saturday of each month</p>
+                    <p>Join us as we serve our local community through various service projects.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Prayer Meeting</h3>
+                    <p><strong>Date:</strong> Every Thursday, 6:00 AM</p>
+                    <p>Start your day with prayer alongside fellow believers.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Fellowship Potluck</h3>
+                    <p><strong>Date:</strong> Last Sunday of the month</p>
+                    <p>Share a meal and build relationships after the morning service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong><br>123 Faith Street<br>Your City, ST 12345</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Email:</strong> info@gracefellowship.org</p>
+                <p><strong>Pastor:</strong> Rev. John Smith</p>
+                <p style="margin-top: 2rem; text-align: center;">
+                    <a href="mailto:info@gracefellowship.org" class="btn">Send Us a Message</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Grace Fellowship. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">May God bless you and keep you</p>
+        </div>
+    </footer>
+</body>
+</html>
